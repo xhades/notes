@@ -1,0 +1,151 @@
+nav
+{
+    background: #ccc;
+    height: 50px;
+}
+
+#banner
+{
+    background: #777;
+    height: 700px;
+}
+
+nav ul
+{
+    list-style-type:none;
+    margin: 0;
+    float: right;
+}
+
+nav ul li, nav .logo
+{
+    display: inline-block;
+    line-height: 50px;
+    margin-right: 20px;
+}
+
+nav ul li a
+{
+    line-height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    height: inherit;
+}
+
+nav .logo
+{
+    float: left;
+    padding: 5px;
+}
+
+#banner .inner
+{
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 160px;
+}
+#banner .inner h1
+{
+    margin: 0px;
+}
+
+button
+{
+    border: none;
+    background: #333;
+    color: #eee;
+    padding: 10px;
+
+}
+
+#banner button
+{
+    padding: 14px 40px;
+}
+
+#banner .inner .more
+{
+    margin-top: 220px;
+}
+
+.sub-heading
+{
+    margin: 30px;
+    line-height: 30px;
+}
+
+.logo
+{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo a
+{
+    color: #fff;
+}
+
+.hr
+{
+    width: 70%;
+    height: 2px;
+    margin: 20px auto;
+
+
+}
+.green-section
+{
+    background: #089DB0;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.green-section .hr
+{
+    background: #04656d;
+}
+
+.sub-heading
+{
+    font-size: 18px;
+}
+
+.icon-group
+{
+    margin: 60px;
+}
+
+.green-section .icon-group .icon
+{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #077071;
+    transform: rotate(45deg);
+    margin: 20px;
+}
+.wrapper
+{
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.gray-section
+{
+    background: #000;
+}
+
+.gray-section .img-section
+{
+    width: 45%;
+}
+
+.img-section img
+{
+    width: 100%;
+}
+
