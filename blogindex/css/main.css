@@ -1,3 +1,12 @@
+/*清除浮动*/
+.clear-fix:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
 nav
 {
     background: #ccc;
@@ -149,3 +158,97 @@ button
     width: 100%;
 }
 
+.gray-section .text-section
+{
+    width: 45%;
+}
+
+.gray-section .text-section h2, .gray-section .text-section p
+{
+    color: rgba(185, 174, 171, 0.98);
+}
+
+
+.article-preview > div
+{
+    float:left;
+    font-size: 0;
+}
+
+.article-preview:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.text-section
+{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+/*第三部分紫色区域*/
+.purple-section
+{
+    padding: 80px;
+    background: #5a336b;
+    color: #fff;
+}
+
+.purple-section .header-wrapper
+{
+    text-align: center;
+}
+
+.purple-section .hr
+{
+    background-color: #5c2873;
+    width: 60%;
+}
+
+.purple-section .card-group
+{
+    text-align: center;
+}
+.card
+{
+    float: left;
+    width: 49%;
+    min-height:300px;
+    /*border: 1px solid white;*/
+}
+
+.card p
+{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.card:first-child
+{
+    background: rgba(0,0,0,0.04);
+}
+
+.card:nth-child(2)
+{
+    background: rgba(0,0,0,0.07);
+
+}
+
+.card:nth-child(3)
+{
+    background: rgba(0,0,0,0.10);
+
+}
+.card:nth-child(4)
+{
+    background: rgba(0,0,0,0.13);
+
+}
+.card:nth-child(5)
+{
+    background: rgba(0,0,0,0.16);
+
+}
