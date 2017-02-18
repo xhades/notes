@@ -1,0 +1,6 @@
+1.从服务器下载文件命令
+(1)建立一个ssh🔗打开一个SFTP会话
+sftp -Pport username@remote_hostname_or_ip
+(2)输入help查看命令
+(3)lpwd--命令前添加l来操作本地文件系统
+(4)从远程主机下载文件到本地 get remote_file_name

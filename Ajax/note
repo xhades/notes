@@ -1,0 +1,20 @@
+1.什么是HTTP?
+http是一种无状态协议
+
+2.一个完整的HTTP的请求过程：
+建立TCP连接
+Web浏览器向Web服务器发送请求命令
+Web浏览器发送请求头信息
+Web服务器应答
+Web服务器发送应答头信息
+Web服务器向浏览器发送数据
+Web服务器关闭TCP连接
+
+3.XMLHttpRequest发送请求
+(1)open(method,url,async) 一般默认ajax为异步
+
+(2)send(string)
+
+
+
+

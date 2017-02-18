@@ -1,0 +1,15 @@
+1.在javascript中，document.write()可用于直接向HTML输出流写内容
+2.JavaScript 更改此元素的内容 (innerHTML)
+3.更改html的属性 document.getElementById('id').attribute=新属性;
+
+4.HTML事件的例子：
+当用户点击鼠标时
+当网页已加载时
+当图像已加载时
+当鼠标移动到元素上时
+当输入字段被改变时
+当提交HTML表单时
+当用户出发按键时
+
+5.事件冒泡：
+即事件最开始由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播至最不具体的那个节点（文档）
