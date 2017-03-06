@@ -13,3 +13,48 @@
 
 5.事件冒泡：
 即事件最开始由最具体的元素（文档中嵌套层次最深的那个节点）接收，然后逐级向上传播至最不具体的那个节点（文档）
+6.事件捕获
+不太具体的节点应该更早接收到事件，而最具体的节点最后接收到事件。
+
+
+6.事件处理程序
+（1）HTML事件处理程序
+（2）DOM0级事件处理程序：先把元素取出来
+（3）DOM2级事件处理程序：定义了两个方法，用于处理指定和删除事件处理程序的操作
+addEventListener() 和removeEventListener() 接收三个参数：要处理的事件名、作为事件处理程序的函数和布尔值
+
+7.如何处理跨浏览器的事件处理程序？
+封装到对象里
+vat eventUtil={
+    //add handler
+    addHandler:function(element, type, handler){
+        if(element.addEventListener){     //DOM2级别
+            element.addEventListener(type, handler, false);
+        }else if(element.attachEvent){     //IE
+            element.attachEvent("on"+type, handler)
+        }else{
+            element['on'+type]=handler;     //===>element.onclick===element['onclick']
+        }
+    },
+    //remove handler
+    removeHander:function(element, type, handler){
+        if(element.addEventListener){     //DOM2级别
+            element.removeEventListener(type, handler, false);
+        }else if(element.attachEvent){     //IE
+            element.detachEvent("on"+type, handler)
+        }else{
+            element['on'+type]=null;     //===>element.onclick===element['onclick']
+        }
+    }
+    
+}
+
+8.事件对象
+什么是事件对象？在触发DOM上的事件时都会产生一个对象 事件对象event
+（1）DOM中的事件对象
+type属性用于获取事件类型
+target属性用于获取事件目标
+stopPropagation()方法用于阻止事件冒泡
+preventDefault()方法 阻止事件的默认行为
+（2）IE的事件对象
+type属性 用于获取事件类型
