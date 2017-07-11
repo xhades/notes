@@ -1,4 +1,4 @@
 # 放置学习笔记
 ###
 * **Mysql**
-* **基于H5扁平化风格博客首页**
+* [博客文章收集](https://github.com/xhades/studyNotes/tree/master/papers)
