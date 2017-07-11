@@ -1,0 +1,1 @@
+- [京东评价系统海量数据存储设计](http://www.yunweipai.com/archives/8972.html)
